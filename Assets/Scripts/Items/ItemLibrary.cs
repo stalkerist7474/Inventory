@@ -15,7 +15,7 @@ public class ItemLibrary : MonoBehaviour
         {
             item.CountItem = Random.Range(1, 99);
             item.BaffValue = Random.Range(1, 99);
-            Debug.Log("3");
+
         }
     }
 }

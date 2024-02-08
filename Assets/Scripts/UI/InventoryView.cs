@@ -17,7 +17,7 @@ public class InventoryView : MonoBehaviour
         var view = Instantiate(_slotView, _container.transform);
 
         view.Render(item);
-        Debug.Log("4");
+
     }
 
     //довление всех предметов во вью
@@ -26,7 +26,7 @@ public class InventoryView : MonoBehaviour
         foreach (var item in _inventory.ListItem)
         {
             AddItemView(item);
-            Debug.Log("5");
+
         }
     }
 

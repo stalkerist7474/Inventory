@@ -492,8 +492,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inventory: {fileID: 19982146}
   _itemLibrary: {fileID: 1173276594}
-  _maxIdItemForRandom: 3
-  _countAddedItems: 2
+  _countAddedItems: 10
+  _containerAddedItems: {fileID: 19982143}
 --- !u!114 &19982146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,11 +506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36c2ebf9fa0e51c4dbb92303390be753, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _listItem:
-  - {fileID: 3079742118707234428, guid: 6bbc008ff197aa140a138311e18221e9, type: 3}
-  - {fileID: 3134614995944086611, guid: d1b6b0e62877f1b40a160abd19386e81, type: 3}
-  - {fileID: 3362499628788681307, guid: 47357a4586c396342b5191fd0a4610bc, type: 3}
-  - {fileID: 486113800559564723, guid: 70ec6b16c8382b44ba782e1d181b36ea, type: 3}
+  _listItem: []
 --- !u!1 &35840538
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +888,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 0
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 20
   m_Viewport: {fileID: 2004453842}
   m_HorizontalScrollbar: {fileID: 911956601}
   m_VerticalScrollbar: {fileID: 0}
@@ -1268,6 +1264,14 @@ MonoBehaviour:
   _typeFilters:
   - {fileID: 1954362166}
   - {fileID: 2124672365}
+  - {fileID: 1702656768}
+  - {fileID: 530156514}
+  - {fileID: 494866771}
+  - {fileID: 628097271}
+  - {fileID: 257255517}
+  - {fileID: 951280948}
+  - {fileID: 1031605070}
+  - {fileID: 1931554}
   _baffFilters:
   - {fileID: 1600836592}
   - {fileID: 1442787592}
@@ -5180,6 +5184,15 @@ MonoBehaviour:
   - {fileID: 3079742118707234428, guid: 6bbc008ff197aa140a138311e18221e9, type: 3}
   - {fileID: 3134614995944086611, guid: d1b6b0e62877f1b40a160abd19386e81, type: 3}
   - {fileID: 3362499628788681307, guid: 47357a4586c396342b5191fd0a4610bc, type: 3}
+  - {fileID: 8615071358434079364, guid: e5a20f5ef443703498f0a875c6521321, type: 3}
+  - {fileID: 975549538634629937, guid: 48c35d36c6722bd41a5a2192e59e1a81, type: 3}
+  - {fileID: 5424329641405742470, guid: 5dfb7b5d6b35d944684630da111ab989, type: 3}
+  - {fileID: 486113800559564723, guid: 70ec6b16c8382b44ba782e1d181b36ea, type: 3}
+  - {fileID: 3195470632342824161, guid: b7fd0a2890a9d224883e4dfbea2b70be, type: 3}
+  - {fileID: 3965868544661882220, guid: 3463ea724be699049864c14f6dbe94cd, type: 3}
+  - {fileID: 2516004961453812821, guid: b1d775b8a309907408fdd29fa56df451, type: 3}
+  - {fileID: 3317917610089238114, guid: e805b5fbcdd0d7f4582b64fa62650118, type: 3}
+  - {fileID: 8160416277979101288, guid: 60f95c2005d772f4a88637e5253f0c67, type: 3}
 --- !u!1 &1175615601
 GameObject:
   m_ObjectHideFlags: 0
@@ -5507,6 +5520,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.CanvasGroup, UnityEngine
         m_MethodName: set_blocksRaycasts
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 141860305}
+        m_TargetAssemblyTypeName: InventoryView, Assembly-CSharp
+        m_MethodName: AddAllItemsView
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6050,9 +6075,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 141860305}
-        m_TargetAssemblyTypeName: InventoryView, Assembly-CSharp
-        m_MethodName: AddAllItemsView
+      - m_Target: {fileID: 19982145}
+        m_TargetAssemblyTypeName: InventoryProcessor, Assembly-CSharp
+        m_MethodName: AddRandomItems
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
