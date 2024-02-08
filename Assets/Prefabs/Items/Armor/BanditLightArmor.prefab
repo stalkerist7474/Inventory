@@ -51,3 +51,4 @@ MonoBehaviour:
   _maxInStack: 99
   _itemBaffType: {fileID: 4034924091378932704, guid: 3a1da52976fbc6540a0bae3d4fc26b81, type: 3}
   _baffValue: 5
+  _typeItem: Armor

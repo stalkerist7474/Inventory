@@ -21,6 +21,8 @@ public class InventorySlotView : MonoBehaviour
         _valueCount.text = item.CountItem.ToString();
         _valueBaff.text = item.BaffValue.ToString();
 
+        Debug.Log("6");
+
 
     }
 }

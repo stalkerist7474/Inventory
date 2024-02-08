@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4450748855440802287
+--- !u!1 &4734321676538633588
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3402654610942715254}
-  - component: {fileID: 3362499628788681307}
+  - component: {fileID: 5936835135446140596}
+  - component: {fileID: 486113800559564723}
   m_Layer: 0
-  m_Name: DarkMountain
+  m_Name: BattleBow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3402654610942715254
+--- !u!4 &5936835135446140596
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4450748855440802287}
+  m_GameObject: {fileID: 4734321676538633588}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2686558, y: -0.9295639, z: 0.12837747}
+  m_LocalPosition: {x: -5.002686, y: -2.3647647, z: 0.27919707}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3362499628788681307
+--- !u!114 &486113800559564723
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4450748855440802287}
+  m_GameObject: {fileID: 4734321676538633588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c48ac8f2cc148eb44901135f89dd3304, type: 3}
+  m_Script: {fileID: 11500000, guid: da735c9bc62be594a9a8def9f45dc8b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 3
-  _name: DarkMountain
-  _icon: {fileID: 21300000, guid: 4b386faa597921a4b997e269ee02f410, type: 3}
-  _countItem: 6
+  _id: 8
+  _name: BattleBow
+  _icon: {fileID: 21300000, guid: 1684be12f6baf9749948f4388534d98d, type: 3}
+  _countItem: 50
   _maxInStack: 99
-  _itemBaffType: {fileID: 6162808761143650103, guid: 904e94a2e43625a409599dfc6a2634b5, type: 3}
-  _baffValue: 25
-  _typeItem: Armor
+  _itemBaffType: {fileID: 6508411474466710804, guid: fc95373a4c2d53c4bac78cb698010689, type: 3}
+  _baffValue: 3
+  _typeItem: Arrow
